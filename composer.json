@@ -1,0 +1,17 @@
+{
+    "name": "gibocode/laravel-elements",
+    "description": "A package of HTML elements and objects made in Laravel.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Gilbor Camporazo Jr.",
+            "email": "gilborcamporazojr@programmer.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gibocode\\LaravelElements\\": "/"
+        }
+    },
+    "minimum-stability": "stable"
+}
