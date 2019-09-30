@@ -197,7 +197,7 @@ class Element implements ElementInterface {
 
         foreach ($this->getAttributes() as $attribute) {
 
-            $htmlAttributes .= $attribute->render();
+            $htmlAttributes .= ' ' . $attribute->render();
         }
 
         return $htmlAttributes;
@@ -212,7 +212,7 @@ class Element implements ElementInterface {
         // Checks if the element name is set
         $this->setElementName($this->getElementName());
 
-        $html = '<' . $this->getElementName() . ' ' . $this->renderAttributes() . '/>';
+        $html = '<' . $this->getElementName() . $this->renderAttributes() . '/>';
         
         if (!$this->isSelfClose()) {
 
